@@ -1,6 +1,7 @@
 package com.ProjetoWell.Curso.entities;
 
 import com.ProjetoWell.Curso.entities.enums.OrderStatus;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
@@ -19,6 +20,8 @@ public class Order implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'",timezone = "GMT")
     private Instant moment;
     // Dizer pro banco de dados que estamos gravando um numero inteiro
     private Integer orderStatus;
