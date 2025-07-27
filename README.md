@@ -190,5 +190,5 @@ Documentação da API com Swagger (springdoc-openapi)
 
 🖊️ Autor
 
-Well — Seu LinkedIn | GitHub: @seu-usuario
+Well — linkedin.com/in/wellingnton-honney-a93a75241 | GitHub: @Fiwe64
 
